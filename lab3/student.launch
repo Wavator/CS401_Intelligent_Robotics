@@ -1,0 +1,15 @@
+<launch>
+
+  <node pkg="learning_topic" type="publisher" name="publisher" respawn="true">
+  </node>
+
+  <node pkg="learning_topic" type="subscriber" name="subscriber" respawn="true">
+  </node>
+
+  <node pkg="learning_topic" type="server" name="server" respawn="true">
+  </node>
+
+  <node pkg="learning_topic" type="client" name="client" args="5" respawn="true">
+  </node>
+
+</launch>
